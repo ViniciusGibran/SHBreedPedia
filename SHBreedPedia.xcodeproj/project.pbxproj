@@ -28,6 +28,7 @@
 		913686B42A56F52F00C85A37 /* BreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913686B32A56F52F00C85A37 /* BreedListViewController.swift */; };
 		913686B72A56F78D00C85A37 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913686B62A56F78D00C85A37 /* Breed.swift */; };
 		913686BA2A56F80C00C85A37 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913686B92A56F80B00C85A37 /* APIService.swift */; };
+		913686BF2A5712AF00C85A37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 913686BE2A5712AF00C85A37 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				913686BF2A5712AF00C85A37 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +269,9 @@
 			dependencies = (
 			);
 			name = SHBreedPedia;
+			packageProductDependencies = (
+				913686BE2A5712AF00C85A37 /* Kingfisher */,
+			);
 			productName = SHBreedPedia;
 			productReference = 9136865F2A56F10700C85A37 /* SHBreedPedia.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +344,9 @@
 				Base,
 			);
 			mainGroup = 913686562A56F10700C85A37;
+			packageReferences = (
+				913686BD2A5712AF00C85A37 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 913686602A56F10700C85A37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -734,6 +742,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		913686BD2A5712AF00C85A37 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		913686BE2A5712AF00C85A37 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 913686BD2A5712AF00C85A37 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9136866B2A56F10700C85A37 /* SHBreedPedia.xcdatamodeld */ = {
